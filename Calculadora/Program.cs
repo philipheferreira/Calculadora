@@ -4,7 +4,8 @@ namespace principal {
 
     public class Program {  
         static void Main(string[] args) {
-            int menu;
+
+            int primeiroNumero, segundoNumero, menu;
             calculadora meuObjt1 = new calculadora();
 
             do {
@@ -22,14 +23,43 @@ namespace principal {
 
                 menu = Convert.ToInt32(Console.ReadLine());
 
+
                 if(menu == 1) { 
-                    Console.WriteLine(meuObjt1.soma(20, 40));
-                } else if(menu == 2) { 
-                    Console.WriteLine(meuObjt1.sub(20, 40));
-                } else if(menu == 3) { 
-                    Console.WriteLine(meuObjt1.mult(20, 40));
-                } else if(menu == 4) { 
-                    Console.WriteLine(meuObjt1.div(20, 40));
+                    Console.WriteLine("Digite o primeiro numero da operacao:");
+                    primeiroNumero = Convert.ToInt32(Console.ReadLine());
+
+                    Console.WriteLine("Digite o segundo numero da operacao");
+                    segundoNumero = Convert.ToInt32(Console.ReadLine());
+
+                    Console.WriteLine(meuObjt1.soma(primeiroNumero, segundoNumero));
+
+                } else if(menu == 2) {
+                    Console.WriteLine("Digite o primeiro numero da operacao:");
+                    primeiroNumero = Convert.ToInt32(Console.ReadLine());
+
+                    Console.WriteLine("Digite o segundo numero da operacao");
+                    segundoNumero = Convert.ToInt32(Console.ReadLine());
+
+                    Console.WriteLine(meuObjt1.sub(primeiroNumero, segundoNumero));
+
+                } else if(menu == 3) {
+                    Console.WriteLine("Digite o primeiro numero da operacao:");
+                    primeiroNumero = Convert.ToInt32(Console.ReadLine());
+
+                    Console.WriteLine("Digite o segundo numero da operacao");
+                    segundoNumero = Convert.ToInt32(Console.ReadLine());
+
+                    Console.WriteLine(meuObjt1.mult(primeiroNumero, segundoNumero));
+
+                } else if(menu == 4) {
+                    Console.WriteLine("Digite o primeiro numero da operacao:");
+                    primeiroNumero = Convert.ToInt32(Console.ReadLine());
+
+                    Console.WriteLine("Digite o segundo numero da operacao");
+                    segundoNumero = Convert.ToInt32(Console.ReadLine());
+
+                    Console.WriteLine(meuObjt1.div(primeiroNumero, segundoNumero));
+
                 } else {
                     Console.WriteLine("Voce colocou uma informacao incorreta");
                 }
