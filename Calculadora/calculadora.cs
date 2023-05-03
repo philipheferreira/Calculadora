@@ -1,6 +1,6 @@
 ﻿
 
-namespace principal { 
+namespace calc { 
 
     class calculadora{  
         public int soma(int x, int y) { 

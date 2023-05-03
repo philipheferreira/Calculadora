@@ -1,6 +1,5 @@
-﻿using System;
-
-namespace principal { 
+﻿using System; // importacao do sistema
+using calc;
 
     public class Program {  
         static void Main(string[] args) {
@@ -31,7 +30,7 @@ namespace principal {
                     Console.WriteLine("Digite o segundo numero da operacao");
                     segundoNumero = Convert.ToInt32(Console.ReadLine());
 
-                    Console.WriteLine(meuObjt1.soma(primeiroNumero, segundoNumero));
+                    Console.WriteLine("A soma do numero " + primeiroNumero + " com o numero " + segundoNumero + " é igual a " + meuObjt1.soma(primeiroNumero, segundoNumero));
 
                 } else if(menu == 2) {
                     Console.WriteLine("Digite o primeiro numero da operacao:");
@@ -40,7 +39,7 @@ namespace principal {
                     Console.WriteLine("Digite o segundo numero da operacao");
                     segundoNumero = Convert.ToInt32(Console.ReadLine());
 
-                    Console.WriteLine(meuObjt1.sub(primeiroNumero, segundoNumero));
+                    Console.WriteLine("A subtracao do numero " + primeiroNumero + " com o numero " + segundoNumero + " é igual a " + meuObjt1.sub(primeiroNumero, segundoNumero));
 
                 } else if(menu == 3) {
                     Console.WriteLine("Digite o primeiro numero da operacao:");
@@ -49,7 +48,7 @@ namespace principal {
                     Console.WriteLine("Digite o segundo numero da operacao");
                     segundoNumero = Convert.ToInt32(Console.ReadLine());
 
-                    Console.WriteLine(meuObjt1.mult(primeiroNumero, segundoNumero));
+                    Console.WriteLine("A Multiplicação do numero " + primeiroNumero + " com o numero " + segundoNumero + " é igual a " + meuObjt1.mult(primeiroNumero, segundoNumero));
 
                 } else if(menu == 4) {
                     Console.WriteLine("Digite o primeiro numero da operacao:");
@@ -58,7 +57,7 @@ namespace principal {
                     Console.WriteLine("Digite o segundo numero da operacao");
                     segundoNumero = Convert.ToInt32(Console.ReadLine());
 
-                    Console.WriteLine(meuObjt1.div(primeiroNumero, segundoNumero));
+                    Console.WriteLine("A divisão do numero " + primeiroNumero + " com o numero " + segundoNumero + " é igual a " + meuObjt1.div(primeiroNumero, segundoNumero));
 
                 } else {
                     Console.WriteLine("Voce colocou uma informacao incorreta");
@@ -66,5 +65,3 @@ namespace principal {
             } while (menu != 0);
         }
     }
-
-}
