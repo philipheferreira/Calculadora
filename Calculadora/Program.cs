@@ -4,7 +4,7 @@ using calc;
     public class Program {  
         static void Main(string[] args) {
 
-            int primeiroNumero, segundoNumero, menu;
+            int primeiroNumero, segundoNumero, menuCalculadora;
             calculadora meuObjt1 = new calculadora();
 
             do {
@@ -20,10 +20,10 @@ using calc;
 
                 Console.WriteLine("0-sair");
 
-                menu = Convert.ToInt32(Console.ReadLine());
+            menuCalculadora = Convert.ToInt32(Console.ReadLine());
 
 
-                if(menu == 1) { 
+                if(menuCalculadora == 1) { 
                     Console.WriteLine("Digite o primeiro numero da operacao:");
                     primeiroNumero = Convert.ToInt32(Console.ReadLine());
 
@@ -32,7 +32,7 @@ using calc;
 
                     Console.WriteLine("A soma do numero " + primeiroNumero + " com o numero " + segundoNumero + " é igual a " + meuObjt1.soma(primeiroNumero, segundoNumero));
 
-                } else if(menu == 2) {
+                } else if(menuCalculadora == 2) {
                     Console.WriteLine("Digite o primeiro numero da operacao:");
                     primeiroNumero = Convert.ToInt32(Console.ReadLine());
 
@@ -41,7 +41,7 @@ using calc;
 
                     Console.WriteLine("A subtracao do numero " + primeiroNumero + " com o numero " + segundoNumero + " é igual a " + meuObjt1.sub(primeiroNumero, segundoNumero));
 
-                } else if(menu == 3) {
+                } else if(menuCalculadora == 3) {
                     Console.WriteLine("Digite o primeiro numero da operacao:");
                     primeiroNumero = Convert.ToInt32(Console.ReadLine());
 
@@ -50,7 +50,7 @@ using calc;
 
                     Console.WriteLine("A Multiplicação do numero " + primeiroNumero + " com o numero " + segundoNumero + " é igual a " + meuObjt1.mult(primeiroNumero, segundoNumero));
 
-                } else if(menu == 4) {
+                } else if(menuCalculadora == 4) {
                     Console.WriteLine("Digite o primeiro numero da operacao:");
                     primeiroNumero = Convert.ToInt32(Console.ReadLine());
 
@@ -62,6 +62,6 @@ using calc;
                 } else {
                     Console.WriteLine("Voce colocou uma informacao incorreta");
                 }
-            } while (menu != 0);
+            } while (menuCalculadora != 0);
         }
     }
