@@ -2,9 +2,6 @@
 using calc;
 
     public class Program {  
-        static void MenuCronometro() {
-            Console.WriteLine("Menu do cronometro sera feito");
-        }
 
         static void MenuCalculadora() {
             int primeiroNumero, segundoNumero, menuCalculadora;
@@ -80,6 +77,6 @@ using calc;
         }
 
         static void Main(string[] args) {
-        MenuCronometro();
+        MenuCalculadora();
         }
     }
